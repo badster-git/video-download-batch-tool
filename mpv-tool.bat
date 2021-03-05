@@ -31,8 +31,8 @@ set /p url="Enter URL:"
 	if %choice%==3 ( start/MIN youtube-dl -f %best% -o "C:\%HOMEPATH%\Videos\%%(creator)s/%%(title)s.%%(ext)s" %url% )
 	REM Audio Download in C:\Users\user\Music\ 
     if %choice%==4 ( start /MIN youtube-dl --extract-audio --audio-format mp3 -o "C:\%HOMEPATH%\Music\%%(creator)s/%%(title)s.%%(ext)s" %url% )
-    REM Playlist Download in C:\Users\cia\Videos\Playlist
+    REM Playlist Download in C:\Users\user\Videos\Playlist
     if %choice%==5 ( start /MIN youtube-dl -f %best% -o "C:\%HOMEPATH%\Videos\Playlist\%%(playlist)s/%%(playlist_index)s - %%(title)s.%%(ext)s" %url% )
-    REM Download Channel in C:\Users\cia\Videos\Channel\
+    REM Download Channel in C:\Users\user\Videos\Channel\
     if %choice%==6 ( start /MIN youtube-dl -i -w -c --add-metadata -f %best% -o "C:\Videos\Channel\%%(uploader)s/(%%(uploader_id)s)/%%(upload_date)s - %%(title)s - (%%(duration)s) [%%(resolution)s] [%%(id)s].%%(ext)s" -v %url% )
 	goto :eof
