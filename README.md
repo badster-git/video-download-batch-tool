@@ -1,4 +1,4 @@
-# Batch video tool to download with youtube-dl or play a video with mpv.
+# Batch video tool to download or play a video with mpv
 
 ## What it does
 Takes a video url (youtube, invidious, bitchute, etc.) and downloads the video, audio or plays it with mpv
