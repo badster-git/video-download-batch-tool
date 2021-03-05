@@ -27,12 +27,12 @@ set /p url="Enter URL:"
 	if %res%==4 ( set best="bestvideo[height<=?1440]+bestaudio/best" )
 	if %res%==5 ( set best="bestvideo[height<=?1260]+bestaudio/best" )
 	REM YT-DL Downloading
-	REM Video Download in C:\Users\cia\Videos\ 
+	REM Video Download in C:\Users\user\Videos\ 
 	if %choice%==3 ( start/MIN youtube-dl -f %best% -o "C:\%HOMEPATH%\Videos\%%(creator)s/%%(title)s.%%(ext)s" %url% )
-	REM Audio Download in C:\Users\cia\YTA\ 
+	REM Audio Download in C:\Users\user\Music\ 
     if %choice%==4 ( start /MIN youtube-dl --extract-audio --audio-format mp3 -o "C:\%HOMEPATH%\Music\%%(creator)s/%%(title)s.%%(ext)s" %url% )
     REM Playlist Download in C:\Users\cia\Videos\Playlist
     if %choice%==5 ( start /MIN youtube-dl -f %best% -o "C:\%HOMEPATH%\Videos\Playlist\%%(playlist)s/%%(playlist_index)s - %%(title)s.%%(ext)s" %url% )
     REM Download Channel in C:\Users\cia\Videos\Channel\
-    if %choice%==6 ( start /MIN youtube-dl -i -w -c --add-metadata -f %best% -o "D:\Videos\Channel\%%(uploader)s/(%%(uploader_id)s)/%%(upload_date)s - %%(title)s - (%%(duration)s) [%%(resolution)s] [%%(id)s].%%(ext)s" -v %url% )
+    if %choice%==6 ( start /MIN youtube-dl -i -w -c --add-metadata -f %best% -o "C:\Videos\Channel\%%(uploader)s/(%%(uploader_id)s)/%%(upload_date)s - %%(title)s - (%%(duration)s) [%%(resolution)s] [%%(id)s].%%(ext)s" -v %url% )
 	goto :eof
