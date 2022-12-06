@@ -9,21 +9,21 @@ Downloads playlists and entire channels
 
 Downloads videos to 
 ```
-HOMEPATH\Videos\[Creator]\[Video Title].mp4
+[Disk]\library\non-personal\media\vids\[Creator]\[Video Title].mp4
 ```
 
 Downloads playlists to
 ```
-HOMEPATH\Videos\Playlist\[Playlist Name]\[Playlist Index] - [Video Title].mp4
+[Disk]\library\non-personal\media\vids\playlist\[Playlist Name]\[Playlist Index] - [Video Title].mp4
 ```
 
 Downloads channel to
 ```
-HOMEPATH\Videos\Channel\[Uploader]\[Channel ID]\[Upload Date] - [Video Title] - [Duration][Resolution][ID].mp4
+[Disk]\library\non-personal\media\vids\channels\[Uploader]\[Channel ID]\[Upload Date] - [Video Title] - [Duration][Resolution][ID].mp4
 ```
 Downloads audio to 
 ```
-HOMEPATH\Music\[Creator]\[Song-Title].mp3
+[Disk]\library\non-personal\media\music\mp3\[Creator]\[Song-Title].mp3
 ```
 
 ## Usage
